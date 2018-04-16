@@ -1,0 +1,6 @@
+@startuml
+
+object 逾期记录{
+        逾期天数
+}
+@enduml
