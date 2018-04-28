@@ -1,0 +1,20 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+actor 图书管理员
+participant "系统" as A
+participant "书" as C
+图书管理员 -> A: 登录
+activate A
+A->图书管理员:验证账户正确性
+图书管理员 -> A: 输入图书编号
+A -> C: 查询图书信息
+activate C
+C-> A: 返回查询信息
+deactivate C
+A -> 图书管理员: 查询成功
+deactivate A
+
+@enduml

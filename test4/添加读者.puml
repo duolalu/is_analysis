@@ -1,0 +1,24 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+
+actor 读者
+actor 图书管理员
+participant "系统" as A
+participant "读者" as B
+读者->图书管理员 :读者信息
+图书管理员 -> A: 登录
+activate A
+A->图书管理员:验证账户正确性
+图书管理员 -> A: 输入读者信息
+A -> B: 是否有该读者
+activate B
+loop
+A -> B: 添加读者信息
+deactivate B
+A -> 图书管理员: 添加成功
+deactivate A
+end
+@enduml

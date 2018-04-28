@@ -1,0 +1,30 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+
+actor 读者
+participant "图书管理系统" as A
+participant "读者" as B
+participant "书" as C
+participant "预订记录" as D
+
+读者 -> A: 登录
+activate A
+A->读者:验证账户正确性
+读者 -> A: 输入借书编号
+A -> B: 获取读者信息
+activate B
+A -> B: 检查是否可预定
+deactivate B
+A -> C: 查询库存
+activate C
+A -> C: 修改库存
+deactivate C
+A -> D: 记录读者信息
+activate D
+deactivate D
+A -> 读者: 预定成功
+deactivate A
+@enduml
