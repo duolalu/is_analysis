@@ -94,11 +94,8 @@ activate E
 deactivate E
 end
 deactivate A
-A->图书管理员:借书成功
+A->图书管理员:还书成功
 @enduml
-
-
-
 ```
 ### 2.2 还书用例顺序图
 ![](还回图书.png  "归还图书" )
