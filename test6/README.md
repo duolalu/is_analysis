@@ -1,4 +1,4 @@
-﻿# 基于GitHub的实验管理平台的分析与设计
+# 基于GitHub的实验管理平台的分析与设计
 
 ### 成都大学信息科学与工程学院
 
@@ -18,8 +18,7 @@
     
 ## 2. 系统总体结构
 ![系统结构图](./images/系统架构图.png)<br>
-界面设计参见：https://dulaou.github.io/is_analysis/test6/ui/login.html
-    
+ 界面设计参见：https://dulaou.github.io/is_analysis/test6/ui/login.html
 ## 3. 用例图设计[源码](./用例图.puml)
 ![用例图](./images/用例图.png)
  
@@ -31,12 +30,12 @@
      
 ## 6. 界面及用例详细设计
 
-### [“登录”用例](./用例/登录.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/login.html)
+### [“登录”用例](./用例/登录.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/index.html)
 ### [“修改密码”用例](./用例/修改密码.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/setpassword.html)
 ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/setuserinfo.html)
 ### [“修改课程作业”用例](./用例/修改课程作业.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/setexperiment.html)
 ### [“删除课程作业”用例](./用例/删除课程作业.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/setexperiment.html)
-### [“显示学生列表”用例](./用例/显示学生列表.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getstudentscore.html)
+### [“显示学生列表”用例](./用例/显示学生列表.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getstudentlist.html)
 ### [“显示课程信息”用例](./用例/显示课程信息.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getcourseinfo.html)
 ### [“查看学生成绩”用例](./用例/查看学生成绩.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getstudentscore.html)
 ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getscore.html)
