@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 登出顺序图
+
+actor 用户
+participant  主页面
+participant  login页面
+participant  API服务
+
+
+用户->主页面:用户点击登出按钮
+主页面->API服务:API请求:<b>logout</b>,参数是用户名
+API服务->login页面:返回Login页面
+
+
+@enduml

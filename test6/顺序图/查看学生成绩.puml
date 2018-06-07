@@ -1,0 +1,17 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 查看学生成绩顺序图
+
+actor 老师
+participant  API服务
+participant  老师主页面
+database 数据库存储
+老师-> 老师主页面:点击查看成绩并选择相应课程
+老师主页面->API服务:发送请求 并传入course_id
+API服务->数据库存储:服务请求对应course_id 的学生的成绩
+数据库存储->API服务:返回对应课程的成绩
+API服务->老师主页面:显示学生成绩列表
+@enduml

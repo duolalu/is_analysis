@@ -1,0 +1,48 @@
+@startuml
+
+skinparam packageStyle rectangle
+
+title 基于GitHub的实验管理平台--用例图
+
+actor teachers
+actor students
+actor users
+users <|-- teachers
+users <|-- students
+
+rectangle  用户用例集 {
+	users --up-> (登录)
+	users --up-> (登出)
+	users --up-> (查看用户信息)
+	users --up-> (修改用户信息)
+	users --up-> (修改密码)
+
+	(登录) .> (登出) : extends
+	(查看用户信息) .> (修改用户信息) : extends
+
+}
+rectangle 业务用例集 {
+	left to right direction
+	teachers --> (选择课程)
+	teachers -> (显示学生列表)
+	teachers -> (显示课程信息)
+	teachers -> (添加课程作业)
+	teachers --> (删除课程作业)
+	teachers -> (修改课程作业)
+	teachers --> (查看课程作业)
+	teachers -> (评定学生成绩)
+    teachers -> (查看学生成绩)
+	teachers --> (选择学期)
+
+
+
+	students --> (选择学期)
+	students -> (查看成绩)
+    students -> (查看课程作业)
+	students -> (选择课程)
+
+
+}
+
+
+@enduml

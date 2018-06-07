@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 添加课程作业顺序图
+
+actor 老师
+participant  API服务
+participant  课程作业页面
+database 数据库存储
+老师-> 课程作业页面:点击添加课程作业，跳转到添加课程作业页面
+课程作业页面->课程作业页面:添加课程作业内容，并判断是否合法
+课程作业页面->API服务:发送课程作业内容
+API服务->数据库存储:服务请求添加课程作业
+数据库存储->数据库存储:将内容添加到对应的experiments ScoreItem中
+API服务->课程作业页面:返回响应信息到操作页面
+
+@enduml

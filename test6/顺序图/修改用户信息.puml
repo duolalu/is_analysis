@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 修改用户信息顺序图
+
+actor 用户
+participant  API服务
+participant  用户修改信息页面
+database 数据库存储
+用户-> 用户修改信息页面:点击修改用户信息，跳转到修改信息页面
+ 用户修改信息页面-> 用户修改信息页面:输入新的GitHub用户名，并确认提交
+ 用户修改信息页面->API服务:提交新的用户名
+API服务->数据库存储:发送信息到数据库
+数据库存储->数据库存储:更新对应user_id的name
+API服务-> 用户修改信息页面:返回修改用户成功
+
+@enduml

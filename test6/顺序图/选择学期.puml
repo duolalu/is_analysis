@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 选择学期顺序图
+
+actor 用户
+participant  API服务
+participant  用户主页面
+database 数据库存储
+用户-> 用户主页面:点击选择学期
+用户主页面->API服务:传入user_id,course_id
+API服务->数据库存储:请求对应用户所选择的课程的所有学期
+数据库存储->API服务:返回所有学期信息
+API服务-> 用户主页面:显示学期列表
+用户-> 用户主页面:点击想选择的学期
+API服务-> 用户主页面:显示所选学期的信息
+@enduml

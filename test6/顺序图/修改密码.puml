@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 修改密码顺序图
+
+actor 用户
+participant  API服务
+participant  用户主页面
+database 数据库存储
+用户->用户主页面:点击修改密码，并输入两次新密码
+用户主页面->用户主页面:验证两次的密码是否一致
+用户主页面->API服务:发送请求
+API服务->数据库存储:服务请求修改密码
+数据库存储->数据库存储:更新对应user_id的password
+API服务->用户主页面:返回修改密码成功，跳转到登录页面
+
+@enduml

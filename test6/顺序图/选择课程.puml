@@ -1,0 +1,17 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 选择课程顺序图
+
+actor 用户
+participant  API服务
+participant  用户主页面
+database 数据库存储
+用户-> 用户主页面:点击所选择的课程
+用户主页面->API服务:传入user_id,term
+API服务->数据库存储:请求对应user的course表中的课程信息
+数据库存储->API服务:返回课程信息
+API服务-> 用户主页面:返回响应内容并显示
+@enduml

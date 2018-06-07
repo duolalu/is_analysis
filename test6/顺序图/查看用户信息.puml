@@ -1,0 +1,17 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 查看用户信息顺序图
+
+actor 用户
+participant  API服务
+participant  用户主页面
+database 数据库存储
+用户-> 用户主页面:点击查看用户信息
+ 用户主页面->API服务::发送请求 并传入user_id
+API服务->数据库存储:服务请求对应user_id的个人信息
+数据库存储->API服务:返回查询的user_id的用户信息
+API服务-> 用户主页面:返回响应内容并显示到页面
+@enduml

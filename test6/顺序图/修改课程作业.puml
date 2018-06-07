@@ -1,0 +1,19 @@
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor #Black
+skinparam titleFontSize 24
+Title 修改课程作业顺序图
+
+actor 老师
+participant  API服务
+participant  课程作业页面
+database 数据库存储
+老师-> 课程作业页面:点击修改课程作业，跳转到修改课程作业页面
+课程作业页面->课程作业页面:修改课程作业内容
+课程作业页面->API服务:发送修改的课程作业
+API服务->数据库存储:服务请求修改对应的experiments_id ScoreItem_id课程作业
+数据库存储->数据库存储:将数据库中的信息进行修改
+API服务->课程作业页面:返回响应信息到操作页面
+
+@enduml
