@@ -1,4 +1,4 @@
-# 基于GitHub的实验管理平台的分析与设计
+﻿# 基于GitHub的实验管理平台的分析与设计
 
 ### 成都大学信息科学与工程学院
 
@@ -17,11 +17,12 @@
 
     
 ## 2. 系统总体结构
-![系统结构图](./images/系统架构图.png)
+![系统结构图](./images/系统架构图.png)<br>
+界面设计参见：https://dulaou.github.io/is_analysis/test6/ui/login.html
     
 ## 3. 用例图设计[源码](./用例图.puml)
 ![用例图](./images/用例图.png)
- 界面设计参见：https://dulaou.github.io/is_analysis/test6/ui/login.html
+ 
 ## 4. 类图设计[源码](./类图.puml)
 ![类图](./images/类图.png)
 
