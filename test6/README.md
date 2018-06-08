@@ -44,6 +44,6 @@
 ### [“添加课程作业”用例](./用例/添加课程作业.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/setexperiment.html)
 ### [“登出”用例](./用例/登出.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/shome.html)
 ### [“评定学生成绩”用例](./用例/评定学生成绩.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/setscore.html)
-### [“选择学期”用例](./用例/选择学期.md),[界面(https://duolalu.github.io/is_analysis/test6/ui/getterms.html)
+### [“选择学期”用例](./用例/选择学期.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/getterms.html)
 ### [“选择课程”用例](./用例/选择课程.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/shome.html)
 
