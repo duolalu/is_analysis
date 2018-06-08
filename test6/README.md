@@ -40,7 +40,7 @@
 ### [“查看学生成绩”用例](./用例/查看学生成绩.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/getstudentscore.html)
 ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/getscore.html)
 ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/getuserinfo.html)
-### [“查看课程作业”用例](./用例/查看课程作业.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/getexpermient.html)
+### [“查看课程作业”用例](./用例/查看课程作业.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/getexperiment.html)
 ### [“添加课程作业”用例](./用例/添加课程作业.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/setexperiment.html)
 ### [“登出”用例](./用例/登出.md),[界面](https://dulaou.github.io/is_analysis/test6/ui/shome.html)
 ### [“评定学生成绩”用例](./用例/评定学生成绩.md),[界面](https://duolalu.github.io/is_analysis/test6/ui/setscore.html)
