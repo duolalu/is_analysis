@@ -39,7 +39,7 @@ class experiments {
     <b>experiment_id</b> （实验编号）
     experiment_title	（实验题目）
     experiment_content	（实验内容）
-    experiment_date （实验截至时间）
+    experiment_last_date （实验截至时间）
 }
 
 class courses_scores {
@@ -47,7 +47,7 @@ class courses_scores {
     <b>student_id</b> （学生学号）
     course_score （课程成绩）
     course_comment （课程评语）
-    course_date （批改日期）
+    course_update_date （批改日期）
 
 }
 
@@ -57,7 +57,7 @@ class experiments_scores {
     <b>student_id</b> （学号）
     experiment_score （实验成绩）
     experiment_comment （实验评语）
-    experiment_date （批改日期）
+    experiment_update_date （批改日期）
 
 
 }
@@ -76,7 +76,7 @@ class ScoreItem_Scores {
     <b>student_id</b> （学号）
    ScoreItem_score （实验评分点成绩）
    ScoreItem_comment （实验评分点评语）
-   ScoreItem_date （批改日期）
+   ScoreItem_update_date （批改日期）
 
 }
 students "1" -- "n"  courses
